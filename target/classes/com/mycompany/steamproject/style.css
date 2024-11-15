@@ -1,0 +1,67 @@
+/*Login*/
+.btn_login{
+    -fx-background-color: linear-gradient(to right, #06BFFF, #2C73FF);
+    -fx-text-fill: #FFF7FF;
+    -fx-font-weight: bold;
+    -fx-font: 18px Arial;
+}
+.background_login{
+    -fx-background-color: linear-gradient(to top, #191A1E, #212328);
+}
+.signin_login{
+    -fx-text-fill: #1999FF;
+    -fx-font: 12px Arial;
+    -fx-font-weight: bold;
+}
+.generallabel_login{
+    -fx-text-fill: #AFAFAF;
+    -fx-font: 12px Arial;
+}
+.check-box .box {
+	-fx-background-color: #32353C;
+	-fx-border-color: #32353C;;
+	-fx-border-radius: 0; 
+}
+.check-box .mark {
+    -fx-shape: "M1.73,12.91 8.1,19.28 22.79,4.59 22.79,1.59 8.1,16.28 1.73,9.91";
+}
+.check-box:selected .mark {
+   -fx-background-color: rgb(255, 255, 255);
+}
+.check-box:selected .box {
+   -fx-background-color: #32353C;;
+}
+.textfield_login{
+    -fx-background-color: #32353C;
+    -fx-text-fill: #FFFFFF;
+    -fx-font: 16px Arial bold;
+}
+.close_login{
+    -fx-background-color: #212328;
+    -fx-text-fill: #616E76;
+    -fx-font: 16px Arial;
+}
+.close_login:hover{
+    -fx-background-color: #E22A27;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* BIBLIOTECA */
+
+.background_biblioteca{
+  -fx-background-color: #25282f;
+}
+.footer_biblioteca{
+  -fx-background-color: #292c31;
+}
+.header_biblioteca{
+  -fx-background-color: linear-gradient(to top, #1f2024, #1c2537);
+}
+.button_biblioteca{
+  -fx-background-color: none;
+  -fx-text-fill: #c5c7d3;
+  -fx-font: 18px Arial;
+}
+.search_biblioteca{
+  -fx-background-color: #2f3239;
+}

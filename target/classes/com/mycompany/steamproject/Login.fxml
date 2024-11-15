@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.steamproject.LoginController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="background_login" stylesheets="@style.css">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="700.0">
+               <children>
+                  <Button fx:id="btnCerrar" mnemonicParsing="false" onAction="#close" styleClass="close_login" text="✕" />
+               </children>
+            </HBox>
+            <HBox prefHeight="359.0" prefWidth="700.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="359.0" prefWidth="478.0">
+                     <children>
+                        <VBox prefHeight="264.0" prefWidth="402.0">
+                           <children>
+                              <ImageView fitHeight="47.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@login/steam_logo.png" />
+                                 </image>
+                              </ImageView>
+                              <Label styleClass="signin_login" text="SIGN IN WITH  ACCOUNT NAME">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="txtUsuario" prefHeight="45.0" prefWidth="402.0" styleClass="textfield_login">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label styleClass="generallabel_login" text="PASSWORD">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <PasswordField fx:id="txtContrasenia" prefHeight="45.0" styleClass="textfield_login">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </PasswordField>
+                              <CheckBox mnemonicParsing="false" styleClass="generallabel_login" text="Remember me">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </CheckBox>
+                           </children>
+                        </VBox>
+                        <Button fx:id="btnSignIn" mnemonicParsing="false" onAction="#login" prefHeight="46.0" prefWidth="268.0" styleClass="btn_login" text="Sign In" />
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="359.0" prefWidth="293.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="274.0" styleClass="signin_login" text="OR SIGN IN WITH QR" />
+                        <ImageView fitHeight="239.0" fitWidth="258.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label styleClass="generallabel_login" text="Use the Steam Mobile App to sign in via QR code." textAlignment="CENTER" wrapText="true" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="54.0" prefWidth="700.0">
+               <children>
+                  <Label styleClass="generallabel_login" text="Help, I can't sign in" underline="true">
+                     <HBox.margin>
+                        <Insets right="250.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label styleClass="generallabel_login" text="Don't have a Steam account? " />
+                  <Label styleClass="generallabel_login" text="Create a Free account" underline="true" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

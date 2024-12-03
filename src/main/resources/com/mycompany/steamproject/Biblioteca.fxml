@@ -46,7 +46,7 @@
          <children>
             <ImageView fitHeight="40.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fitHeight="40.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" />
-            <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="83.0" styleClass="button_biblioteca" text="STORE">
+            <Button fx:id="btnStore" mnemonicParsing="false" onAction="#switchToStore" prefHeight="43.0" prefWidth="83.0" styleClass="button_biblioteca" text="STORE">
                <font>
                   <Font size="18.0" />
                </font>

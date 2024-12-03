@@ -1,7 +1,10 @@
+com/mycompany/steamproject/JuegoController.class
 com/mycompany/steamproject/UsuarioController.class
-module-info.class
-com/mycompany/steamproject/LoginController.class
+modelo/Juego.class
 com/mycompany/steamproject/DBConnection.class
-com/mycompany/steamproject/BibliotecaController.class
 modelo/Usuario.class
 com/mycompany/steamproject/App.class
+module-info.class
+com/mycompany/steamproject/LoginController.class
+com/mycompany/steamproject/BibliotecaController.class
+com/mycompany/steamproject/StoreController.class
